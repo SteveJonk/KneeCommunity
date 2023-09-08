@@ -1,0 +1,56 @@
+{
+  "name": "wptheme",
+  "version": "1.0.1",
+  "description": "Wordpress Workflow automation, to increase workflow speed",
+  "main": "index.js",
+  "repository": {
+    "none": "none"
+  },
+  "scripts": {
+    "watch": "gulp watch",
+    "styles": "gulp styles",
+    "scripts": "gulp scripts",
+    "minify": "gulp minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@types/react": "^18.0.28",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.2",
+    "browser-sync": "^2.29.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "postcss-color-function": "^4.1.0",
+    "postcss-hexrgba": "^1.0.2",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.2",
+    "postcss-nested": "^4.1.2",
+    "postcss-simple-vars": "^5.0.2",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-middleware": "^6.0.1",
+    "webpack-hot-middleware": "^2.25.3"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.13",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.3.6",
+    "postcss-scss": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.59.3",
+    "ts-loader": "^9.4.2",
+    "typescript": "5.0.2"
+  },
+  "resolutions": {
+    "node-sass": "^6.0.1"
+  }
+}
