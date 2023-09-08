@@ -9,8 +9,12 @@ include "inc/inc.js.php";
 include "inc/login-screen.php";
 include "inc/navbar.php";
 include "inc/sidebars.php";
+include "inc/excerpt.php";
 include "inc/group-block-style.php";
 include "inc/image-block-style.php";
+
+// Include shortcodes
+include "inc/shortcodes/blog-list-summary.php";
 
 function theme_support()
 {

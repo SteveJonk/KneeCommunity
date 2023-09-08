@@ -2,7 +2,7 @@
 
 <div class="container">
     <h1 class="page-title">
-        <?php echo get_the_title(get_option('page_for_posts', true)); ?>
+        <?php echo single_term_title(); ?>
     </h1>
 
     <?php get_template_part('template-parts/tag-list'); ?>

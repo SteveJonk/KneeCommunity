@@ -180,6 +180,7 @@ div.wp-block-group.has-background {
   top: 0;
   width: 100%;
   z-index: 20;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .header__body {
   box-sizing: border-box;
@@ -322,6 +323,115 @@ div.wp-block-group.has-background {
   height: 1px;
   background-color: #e4e7ec;
   border: none;
+}
+.post-card {
+  width: 100%;
+}
+.post-card__link {
+  text-decoration: none;
+}
+.post-card__link__image {
+  border-radius: 20px;
+  width: 100%;
+}
+.post-card__link__title {
+  margin-top: 10px;
+  font-weight: 600;
+}
+.post-header {
+  width: 100%;
+  overflow-x: hidden;
+}
+.post-header__image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+}
+.post-header__breadcrumbs {
+  margin-top: 30px;
+  font-weight: 300;
+  color: #4a556c;
+}
+.post-header__breadcrumbs a {
+  color: #4a556c;
+  text-decoration: none;
+}
+.post-header__title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 40px;
+}
+.page-title {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+@media (max-width: 530px) {
+  .post-list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.related-posts {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.related-posts h2 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.tag-list {
+  margin-bottom: 20px;
+}
+.tag-list__link {
+  text-decoration: none;
+  margin-right: 5px;
+  border: 1px solid #20ad96;
+  border-radius: 1000px;
+  color: #20ad96;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+  transition: all 0.2s;
+}
+.tag-list__link:hover {
+  background-color: #20ad96;
+  color: white;
+}
+@media (max-width: 769px) {
+  .tag-list__link:nth-of-type(n + 7) {
+    display: none;
+  }
+}
+.nav-links {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.nav-links .page-numbers {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #333461;
+  border-radius: 1000px;
+}
+.nav-links .page-numbers.current {
+  background-color: #333461;
+  color: white;
+}
+.nav-links .page-numbers.next, .nav-links .page-numbers.prev {
+  width: auto;
+  padding: 0 10px;
 }
 /* Base stuff */
 html {
