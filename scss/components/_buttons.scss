@@ -4,7 +4,7 @@ button,
   cursor: pointer;
   font-family: $text-header;
   background-color: $common-black !important;
-  border-radius: 10000px !important;
+  border-radius: 4px !important;
   color: white !important;
   font-weight: 700 !important;
   box-shadow: none;
@@ -39,7 +39,7 @@ button,
         background-color: transparent;
         color: white;
         border: 2px solid white;
-        border-radius: 1000px;
+        border-radius: 4px;
         transition: all 0.3s;
         &:hover {
           background-color: white;

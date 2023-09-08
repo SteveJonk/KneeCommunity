@@ -1,2 +1,2 @@
-exports.themeLocation = './';
-exports.urlToPreview = 'http://localhost:10038/';
+exports.themeLocation = './'
+exports.urlToPreview = 'http://localhost:10074/'

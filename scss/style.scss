@@ -1,8 +1,8 @@
 /*!
-    Theme Name: STEF Theme
+    Theme Name: The Knee Community
     Author: Steve Jonk
     Version: 1.0.0
-    Description: This is a started theme for WP
+    Description: A custom theme for The Knee Community
     Requires at least: 5.3
     Tested up to: 6.1
     Requires PHP: 7.0
@@ -23,6 +23,7 @@
 @import './components/admin-login';
 @import './components/buttons';
 @import './components/container';
+@import './components/navbar';
 
 /* Base stuff */
 html {

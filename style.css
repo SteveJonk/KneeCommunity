@@ -1,92 +1,295 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700;800&display=swap");
 /*!
-    Theme Name: Zinq
+    Theme Name: The Knee Community
     Author: Steve Jonk
     Version: 1.0.0
-    Description: Zinq is a single pager with animations, built with gsap
+    Description: A custom theme for The Knee Community
     Requires at least: 5.3
     Tested up to: 6.1
     Requires PHP: 7.0
     License: GNU General Public License v2 or later
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
-    Text Domain: zinq
-    Tags: animation, gsap, single-page
+    Text Domain: stef
+    Tags: theme, STEF
 
 */
 /* Base */
 @media (max-width: 530px) {
   .hide-mobile {
-    display: none !important; } }
+    display: none !important;
+  }
+}
 @media (max-width: 769px) {
   .hide-tablet {
-    display: none !important; } }
+    display: none !important;
+  }
+}
 @media (min-width: 769px) {
   .hide-desktop {
-    display: none !important; } }
+    display: none !important;
+  }
+}
 .tablet-mobile-only {
-  display: none !important; }
+  display: none !important;
+}
 @media (max-width: 769px) {
-    .tablet-mobile-only {
-      display: block !important; } }
+  .tablet-mobile-only {
+    display: block !important;
+  }
+}
 .mobile-only {
-  display: none !important; }
+  display: none !important;
+}
 @media (max-width: 530px) {
-    .mobile-only {
-      display: block !important; } }
+  .mobile-only {
+    display: block !important;
+  }
+}
 .w-100 {
-  width: 100%; }
+  width: 100%;
+}
 .diagonal-line-container {
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 .diagonal-line {
   height: 70%;
   width: 100%;
-  background: linear-gradient(to top left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) calc(50% - 0.8px), #777777 50%, rgba(0, 0, 0, 0) calc(50% + 0.8px), rgba(0, 0, 0, 0) 100%); }
+  background: linear-gradient(to top left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) calc(50% - 0.8px), rgb(119, 119, 119) 50%, rgba(0, 0, 0, 0) calc(50% + 0.8px), rgba(0, 0, 0, 0) 100%);
+}
 .text-center {
-  text-align: center; }
+  text-align: center;
+}
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px; }
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+}
 p {
   font-size: 16px;
-  line-height: 1.4; }
+  line-height: 1.4;
+}
 h1,
 h2,
 h3,
 h4,
 h5 {
   font-style: italic;
-  font-weight: 700; }
+  font-weight: 700;
+}
 h1 {
-  font-size: 31px; }
+  font-size: 31px;
+}
 h2 {
   font-size: 26px;
   margin-top: 0;
-  -webkit-margin-after: 0.6em;
-          margin-block-end: 0.6em; }
+  margin-block-end: 0.6em;
+}
 h3 {
   font-size: 20px;
-  margin-top: 0; }
+  margin-top: 0;
+}
 h4 {
-  font-size: 16px; }
+  font-size: 16px;
+}
 a {
-  color: #0b0000; }
+  color: #041434;
+}
 /* Components  */
 .login {
-  background-color: #f8f4f1; }
+  background-color: #f8f4f1;
+}
 .login #login h1 a {
-    background-image: url("assets/images/Logo.svg"); }
+  background-image: url("assets/images/Logo.svg");
+}
+button,
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #041434 !important;
+  border-radius: 4px !important;
+  color: white !important;
+  font-weight: 700 !important;
+  box-shadow: none;
+  text-decoration: none;
+  padding: 0.667em 1.333em;
+  font-size: 1em !important;
+  transition: all 0.2s;
+  letter-spacing: 2px;
+}
+button:hover,
+.button:hover {
+  opacity: 0.8;
+}
+.wp-core-ui .button-primary,
+.wp-core-ui .button {
+  border: none;
+}
+.wp-block-buttons {
+  font-family: "Kumbh Sans", sans-serif;
+}
+.wp-block-buttons .wp-block-button {
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+.wp-block-buttons .wp-block-button:hover {
+  opacity: 0.8;
+}
+.wp-block-buttons .wp-block-button.is-style-outline:hover {
+  opacity: 1;
+}
+.wp-block-buttons .wp-block-button.is-style-outline a {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.wp-block-buttons .wp-block-button.is-style-outline a:hover {
+  background-color: white;
+  color: #041434 !important;
+  mix-blend-mode: screen;
+}
+.container,
+.is-style-container {
+  padding: 0 20px;
+}
+@media (min-width: 769px) {
+  .container,
+  .is-style-container {
+    max-width: 1450px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 530px) {
+  .wp-block-group.has-background {
+    padding: 20px;
+  }
+}
+div.wp-block-group.has-background {
+  padding: 0;
+}
+.header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.header__body {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.header__body__hamburger {
+  display: none;
+}
+@media (max-width: 769px) {
+  .header__body__hamburger {
+    display: block;
+  }
+}
+.header__body__logo {
+  padding: 15px 0;
+}
+.header__body__navbar {
+  margin-left: auto;
+}
+.header__body__navbar ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header__body__navbar ul li > a {
+  text-decoration: none;
+  color: #4a556c;
+}
+.header__body__navbar ul li.current_page_item > a {
+  color: #041434;
+}
+.header__body__navbar ul li.alt > a {
+  background-color: #20ad96;
+  border: 1px solid #20ad96;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  transition: all 0.3s;
+}
+.header__body__navbar ul li.alt > a:hover {
+  background-color: white;
+  color: #20ad96;
+}
+.header__body__navbar__close {
+  margin-top: 20px;
+  display: none;
+}
+@media (max-width: 769px) {
+  .header__body__navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: white;
+    height: 100%;
+    height: 100dvh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-top: 0;
+    transition: left 0.2s ease-out;
+  }
+  .header__body__navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header__body__navbar.open {
+    left: 0;
+  }
+  .header__body__navbar__close {
+    display: block;
+  }
+}
+.header__body__icons {
+  justify-self: flex-end;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 769px) {
+  .header__body__icons {
+    gap: 10px;
+  }
+}
+/**
+* Header positioning with admin bar
+*/
+.admin-bar .header {
+  top: 32px;
+}
+@media (max-width: 769px) {
+  .admin-bar .header__body__navbar {
+    height: calc(100% - 32px);
+    top: 32px;
+  }
+}
 /* Base stuff */
 html {
-  width: 100%; }
+  width: 100%;
+}
 body {
   margin: 0;
   overflow-x: hidden;
   min-height: 100vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 .main-content {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 #wpadminbar {
-  z-index: 19; }
+  z-index: 19;
+}
