@@ -15,4 +15,9 @@
     align-items: center;
     border-radius: 50%;
   }
+  &.is-style-flush-right {
+    width: 120%;
+    height: 120%;
+    position: absolute;
+  }
 }

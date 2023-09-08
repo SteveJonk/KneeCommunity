@@ -23,3 +23,11 @@ register_block_style(
         'label'        => __('Container', 'textdomain'),
     )
 );
+
+register_block_style(
+    'core/columns',
+    array(
+        'name'         => 'overflow-hidden',
+        'label'        => __('Overflow Hidden', 'textdomain'),
+    )
+);

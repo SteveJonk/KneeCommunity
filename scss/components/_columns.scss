@@ -1,0 +1,11 @@
+.wp-block-columns {
+  border-radius: 24px;
+
+  &.is-style-overflow-hidden {
+    overflow: hidden;
+  }
+
+  & .wp-block-column {
+    position: relative;
+  }
+}

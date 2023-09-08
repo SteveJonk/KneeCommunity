@@ -6,3 +6,11 @@ register_block_style(
         'label'        => __('Hero Image', 'textdomain'),
     )
 );
+
+register_block_style(
+    'core/image',
+    array(
+        'name'         => 'flush-right',
+        'label'        => __('Flush Right', 'textdomain'),
+    )
+);
