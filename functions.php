@@ -10,11 +10,13 @@ include "inc/login-screen.php";
 include "inc/navbar.php";
 include "inc/sidebars.php";
 include "inc/excerpt.php";
+@include "inc/custom-post-types.php";
 include "inc/group-block-style.php";
 include "inc/image-block-style.php";
 
 // Include shortcodes
 include "inc/shortcodes/blog-list-summary.php";
+include "inc/shortcodes/testimonials.php";
 
 function theme_support()
 {

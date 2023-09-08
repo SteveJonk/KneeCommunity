@@ -14,7 +14,7 @@
     gap: 30px;
     &__hamburger {
       display: none;
-      @include Tablet {
+      @include smallDesktop {
         display: block;
       }
     }
@@ -59,7 +59,7 @@
         margin-top: 20px;
         display: none;
       }
-      @include Tablet {
+      @include smallDesktop {
         position: fixed;
         top: 0;
         left: -100%;
@@ -88,7 +88,7 @@
       display: flex;
       gap: 20px;
 
-      @include Tablet {
+      @include smallDesktop {
         gap: 10px;
       }
     }
