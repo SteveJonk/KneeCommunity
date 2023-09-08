@@ -3,6 +3,14 @@
 function theme_sidebars()
 {
     register_sidebar(array(
+        'name' => 'Footer Top',
+        'id' => 'footer-top',
+        'description' => 'Deze sidebar zal worden getoond bovenop de footer',
+        'before_widget' => '',
+        'after_widget' => '',
+    ));
+
+    register_sidebar(array(
         'name' => 'Footer 1',
         'id' => 'footer-1',
         'description' => 'Deze sidebar zal worden getoond in de footer',
@@ -27,9 +35,9 @@ function theme_sidebars()
     ));
 
     register_sidebar(array(
-        'name' => 'Footer 4',
-        'id' => 'footer-4',
-        'description' => 'Deze sidebar zal worden getoond in de footer',
+        'name' => 'Footer Bottom',
+        'id' => 'footer-bottom',
+        'description' => 'Deze sidebar zal worden getoond onder de footer',
         'before_widget' => '',
         'after_widget' => '',
     ));

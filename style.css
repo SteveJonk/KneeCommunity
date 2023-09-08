@@ -94,6 +94,10 @@ h5 {
 }
 a {
   color: #041434;
+  transition: all 0.2s;
+}
+a:hover {
+  opacity: 1 !important;
 }
 /* Components  */
 .login {
@@ -292,6 +296,32 @@ div.wp-block-group.has-background {
     left: 0;
     padding: 10px;
   }
+}
+.footer__top {
+  background-color: #faf8f6;
+  padding: 20px 0;
+}
+.footer__columns {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.footer__columns__col {
+  flex: 1 1 0;
+}
+.footer__columns__col a {
+  text-decoration: none;
+  color: #4a556c;
+  opacity: 0.8;
+}
+.footer__bottom hr {
+  height: 1px;
+  background-color: #e4e7ec;
+  border: none;
 }
 /* Base stuff */
 html {

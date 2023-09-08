@@ -39,4 +39,8 @@ h5 {
 
 a {
   color: $common-black;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 1 !important;
+  }
 }

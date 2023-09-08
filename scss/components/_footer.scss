@@ -1,0 +1,29 @@
+.footer {
+  &__top {
+    background-color: $grey-200;
+    padding: 20px 0;
+  }
+  &__columns {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    &__col {
+      flex: 1 1 0;
+      & a {
+        text-decoration: none;
+        color: $grey-300;
+        opacity: 0.8;
+      }
+    }
+  }
+  &__bottom {
+    & hr {
+      height: 1px;
+      background-color: $grey-150;
+      border: none;
+    }
+  }
+}
