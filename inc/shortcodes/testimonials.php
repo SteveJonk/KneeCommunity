@@ -3,14 +3,13 @@ function testimonials_function($atts)
 {
 
     extract(shortcode_atts(array(
-        'items' => 3
+        'items' => -1
     ), $atts));
 
     $post = new WP_Query(array(
         'posts_per_page' => $items,
         'post_type' => 'testimonial',
-        'orderby' => 'menu_order',
-        'order' => 'ASC'
+        'orderby' => 'rand'
     ));
 
     ob_start(); ?>
