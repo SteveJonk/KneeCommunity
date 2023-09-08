@@ -1,9 +1,11 @@
 .footer {
+  overflow-x: hidden;
   &__top {
     background-color: $grey-200;
     padding: 20px 0;
   }
   &__columns {
+    box-sizing: border-box;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -12,11 +14,15 @@
     column-gap: 50px;
     &__col {
       flex: 1 1 0;
+      max-width: 100%;
       & a {
         text-decoration: none;
         color: $grey-300;
         opacity: 0.8;
       }
+    }
+    @include Mobile {
+      flex-direction: column;
     }
   }
   &__bottom {

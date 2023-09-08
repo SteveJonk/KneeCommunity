@@ -1,10 +1,13 @@
 .container,
 .is-style-container {
-  padding: 0 20px;
+  padding: 0 120px;
 
   @include onlyDesktop {
     max-width: 1450px;
     margin: 0 auto;
+  }
+  @include Tablet {
+    padding: 0 20px;
   }
 }
 
