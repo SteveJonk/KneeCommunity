@@ -20,6 +20,9 @@
     }
     &__logo {
       padding: 15px 0;
+      & img {
+        height: 60px;
+      }
     }
     &__navbar {
       margin-left: auto;

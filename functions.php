@@ -10,9 +10,11 @@ include "inc/login-screen.php";
 include "inc/navbar.php";
 include "inc/sidebars.php";
 include "inc/excerpt.php";
-@include "inc/custom-post-types.php";
+include "inc/custom-post-types.php";
 include "inc/group-block-style.php";
 include "inc/image-block-style.php";
+include "inc/woocommerce/product-list-page.php";
+include "inc/woocommerce/woocommerce-gutenberg.php";
 
 // Include shortcodes
 include "inc/shortcodes/blog-list-summary.php";
