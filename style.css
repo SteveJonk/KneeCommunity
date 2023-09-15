@@ -160,6 +160,13 @@ a {
 a:hover {
   opacity: 1 !important;
 }
+em {
+  font-size: 14px;
+  color: #4a556c;
+  font-style: normal;
+  display: block;
+  margin-top: 5px;
+}
 /* Components  */
 .woocommerce-MyAccount-navigation {
   box-sizing: border-box;
@@ -191,8 +198,15 @@ a:hover {
   padding: 0;
   margin-top: 20px;
 }
-.woocommerce-MyAccount-content .password-input .show-password-input {
-  top: 0;
+.woocommerce-MyAccount-content .woocommerce-Address-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.woocommerce-MyAccount-content .woocommerce-Address-title h3, .woocommerce-MyAccount-content .woocommerce-Address-title .edit {
+  margin: 0;
+  float: none !important;
 }
 .login {
   background-color: #f8f4f1;
@@ -286,6 +300,40 @@ div.wp-block-group.has-background {
 }
 .wp-block-columns .wp-block-column {
   position: relative;
+}
+label {
+  color: #4a556c;
+}
+input,
+textarea {
+  border: 1px solid #e4e7ec;
+  padding: 10px;
+  color: #041434;
+  font-size: 15px;
+}
+textarea {
+  min-height: 100px;
+}
+.password-input .show-password-input {
+  top: 50% !important;
+  transform: translateY(-40%);
+}
+.selection .select2-selection {
+  position: relative;
+  border: 1px solid #e4e7ec;
+  border-radius: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.selection .select2-selection__rendered {
+  padding: 5px;
+}
+.selection .select2-selection__arrow {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+.select2-dropdown {
+  border: 1px solid #e4e7ec;
 }
 .header {
   background-color: white;

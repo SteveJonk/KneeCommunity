@@ -1,0 +1,42 @@
+label {
+  color: $grey-300;
+}
+
+input,
+textarea {
+  border: 1px solid $grey-150;
+  padding: 10px;
+  color: $common-black;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.password-input {
+  & .show-password-input {
+    top: 50% !important;
+    transform: translateY(-40%);
+  }
+}
+
+.selection {
+  & .select2-selection {
+    position: relative;
+    border: 1px solid $grey-150;
+    border-radius: 0;
+    height: fit-content;
+    &__rendered {
+      padding: 5px;
+    }
+    &__arrow {
+      top: 50% !important;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.select2-dropdown {
+  border: 1px solid $grey-150;
+}
