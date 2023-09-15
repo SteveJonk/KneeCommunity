@@ -13,6 +13,17 @@
   }
 }
 
+.woocommerce-products-header {
+  padding: 30px 0 10px 0;
+  margin-bottom: 20px;
+  &__title {
+    margin-top: 0;
+  }
+  & .page-description {
+    color: $grey-300;
+  }
+}
+
 .woocommerce ul.products {
   & .product {
     box-sizing: border-box;
@@ -35,6 +46,10 @@
           margin-bottom: 20px;
         }
       }
+    }
+
+    @include Mobile {
+      width: 100% !important;
     }
   }
 }

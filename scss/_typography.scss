@@ -16,6 +16,9 @@ h2 {
 
 h1 {
   font-size: 50px;
+  @include Mobile {
+    font-size: 40px;
+  }
 }
 
 h2 {
