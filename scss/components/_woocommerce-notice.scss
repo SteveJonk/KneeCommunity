@@ -1,0 +1,39 @@
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-error {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &::before {
+    display: none;
+  }
+  & a {
+    margin-left: auto !important;
+    float: none !important;
+  }
+  @include Mobile {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    & a {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.woocommerce-info,
+.woocommerce-message {
+  border-top-color: $primary-color;
+}
+
+.woocommerce-message {
+  flex-direction: row-reverse;
+  @include Mobile {
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+}

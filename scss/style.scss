@@ -23,6 +23,7 @@
 @import './typography';
 
 /* Components  */
+@import './components/account';
 @import './components/admin-login';
 @import './components/buttons';
 @import './components/container';
@@ -39,6 +40,7 @@
 @import './components/image';
 @import './components/testimonials';
 @import './components/product-list-page';
+@import './components/woocommerce-notice';
 
 /* Base stuff */
 html {
@@ -55,8 +57,4 @@ body {
 
 .main-content {
   margin-bottom: 20px;
-}
-
-#wpadminbar {
-  z-index: 19;
 }

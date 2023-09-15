@@ -161,6 +161,39 @@ a:hover {
   opacity: 1 !important;
 }
 /* Components  */
+.woocommerce-MyAccount-navigation {
+  box-sizing: border-box;
+  background-color: #faf8f6;
+  padding: 10px 20px;
+}
+.woocommerce-MyAccount-navigation ul {
+  list-style: none;
+  padding-left: 0;
+}
+.woocommerce-MyAccount-navigation ul li {
+  margin-bottom: 10px;
+}
+.woocommerce-MyAccount-navigation ul li a {
+  text-decoration: none;
+  color: #041434;
+  opacity: 0.7;
+}
+.woocommerce-MyAccount-navigation ul li.is-active a, .woocommerce-MyAccount-navigation ul li:hover a {
+  opacity: 1;
+}
+@media (max-width: 769px) {
+  .woocommerce-MyAccount-navigation {
+    margin-bottom: 20px;
+  }
+}
+.woocommerce-MyAccount-content fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.woocommerce-MyAccount-content .password-input .show-password-input {
+  top: 0;
+}
 .login {
   background-color: #f8f4f1;
 }
@@ -494,6 +527,9 @@ div.wp-block-group.has-background {
     font-size: 30px;
   }
 }
+.page .post-header__image {
+  margin-top: 30px;
+}
 .page-title {
   font-size: 40px;
   margin-top: 20px;
@@ -682,11 +718,12 @@ div.wp-block-group.has-background {
   text-decoration: none;
 }
 .woocommerce-products-header {
-  padding: 30px 0 10px 0;
+  padding: 40px 0 20px 0;
   margin-bottom: 20px;
 }
 .woocommerce-products-header__title {
   margin-top: 0;
+  margin-bottom: 20px;
 }
 .woocommerce-products-header .page-description {
   color: #4a556c;
@@ -716,6 +753,55 @@ div.wp-block-group.has-background {
     width: 100% !important;
   }
 }
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-error {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.woocommerce-info::before,
+.woocommerce-message::before,
+.woocommerce-error::before {
+  display: none;
+}
+.woocommerce-info a,
+.woocommerce-message a,
+.woocommerce-error a {
+  margin-left: auto !important;
+  float: none !important;
+}
+@media (max-width: 530px) {
+  .woocommerce-info,
+  .woocommerce-message,
+  .woocommerce-error {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .woocommerce-info a,
+  .woocommerce-message a,
+  .woocommerce-error a {
+    margin-left: 0 !important;
+  }
+}
+.woocommerce-info,
+.woocommerce-message {
+  border-top-color: #20ad96;
+}
+.woocommerce-message {
+  flex-direction: row-reverse;
+}
+@media (max-width: 530px) {
+  .woocommerce-message {
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+}
 /* Base stuff */
 html {
   width: 100%;
@@ -729,7 +815,4 @@ body {
 }
 .main-content {
   margin-bottom: 20px;
-}
-#wpadminbar {
-  z-index: 19;
 }

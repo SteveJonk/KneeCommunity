@@ -13,6 +13,7 @@ include "inc/excerpt.php";
 include "inc/custom-post-types.php";
 include "inc/group-block-style.php";
 include "inc/image-block-style.php";
+include "inc/woocommerce/account.php";
 include "inc/woocommerce/product-list-page.php";
 include "inc/woocommerce/woocommerce-gutenberg.php";
 

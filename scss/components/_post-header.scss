@@ -26,3 +26,9 @@
     }
   }
 }
+
+.page {
+  & .post-header__image {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,40 @@
+.woocommerce-MyAccount {
+  &-navigation {
+    box-sizing: border-box;
+    background-color: $grey-200;
+    padding: 10px 20px;
+    & ul {
+      list-style: none;
+      padding-left: 0;
+      & li {
+        margin-bottom: 10px;
+        & a {
+          text-decoration: none;
+          color: $common-black;
+          opacity: 0.7;
+        }
+        &.is-active,
+        &:hover {
+          & a {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    @include Tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &-content {
+    & fieldset {
+      border: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    & .password-input {
+      & .show-password-input {
+        top: 0;
+      }
+    }
+  }
+}
