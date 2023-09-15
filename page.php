@@ -1,9 +1,10 @@
 <?php get_header() ?>
-<?php
+<div class="container">
+    <?php while (have_posts()) {
+        the_post();
+        get_template_part('template-parts/post-header');
+        the_content();
+    } ?>
+</div>
 
-while (have_posts()) {
-    the_post();
-    the_content();
-} ?>
-
-<?php get_footer() ?>
+<?php get_footer(); ?>

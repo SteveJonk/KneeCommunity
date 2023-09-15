@@ -22,5 +22,14 @@
     width: 120%;
     height: 120%;
     position: absolute;
+    @include Tablet {
+      position: relative;
+      margin-bottom: -20px;
+      margin-top: -60px;
+      left: -50px;
+    }
+    @include Mobile {
+      width: 140%;
+    }
   }
 }

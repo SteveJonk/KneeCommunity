@@ -4,6 +4,8 @@
     & h1 {
       & a {
         background-image: url('assets/images/Logo.svg');
+        background-size: contain;
+        width: 100%;
       }
     }
   }
