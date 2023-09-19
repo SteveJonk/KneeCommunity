@@ -938,6 +938,19 @@ textarea {
   flex-direction: column;
   align-items: flex-start;
 }
+.woocommerce .shop_table .product-quantity, .woocommerce .shop_table .product-subtotal {
+  display: none;
+}
+.woocommerce .shop_table .actions {
+  display: none;
+}
+.woocommerce .checkout-button {
+  background-color: #20ad96 !important;
+}
+.woocommerce-page #payment #place_order {
+  background-color: #20ad96 !important;
+  font-size: 1.1em !important;
+}
 /* Base stuff */
 html {
   width: 100%;

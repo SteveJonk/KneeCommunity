@@ -1,0 +1,14 @@
+.woocommerce {
+  & .shop_table {
+    & .product-quantity,
+    & .product-subtotal {
+      display: none;
+    }
+    & .actions {
+      display: none;
+    }
+  }
+  & .checkout-button {
+    background-color: $primary-color !important;
+  }
+}
