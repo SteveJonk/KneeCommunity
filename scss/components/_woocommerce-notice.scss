@@ -1,16 +1,27 @@
+.woocommerce-notices-wrapper {
+  box-sizing: border-box;
+}
+
 .woocommerce-info,
 .woocommerce-message,
 .woocommerce-error {
+  box-sizing: border-box;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   &::before {
     display: none;
   }
   & a {
     margin-left: auto !important;
+    margin-right: 20px !important;
     float: none !important;
+  }
+  & li {
+    box-sizing: border-box;
+    display: block;
   }
   @include Mobile {
     flex-direction: column;
@@ -19,7 +30,9 @@
     align-items: flex-start;
     justify-content: flex-start;
     & a {
+      display: block !important;
       margin-left: 0 !important;
+      margin-bottom: 10px !important;
     }
   }
 }
