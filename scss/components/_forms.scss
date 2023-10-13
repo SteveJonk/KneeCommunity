@@ -40,3 +40,29 @@ textarea {
 .select2-dropdown {
   border: 1px solid $grey-150;
 }
+
+// Newsletter
+.mc4wp-form {
+  width: 100%;
+  & .mc4wp-form-fields {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    & input {
+      &[type='email'] {
+        border-radius: 8px;
+        flex-grow: 1;
+      }
+      &[type='submit'] {
+        background-color: $primary-color;
+        color: white;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: opacity 0.2s;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

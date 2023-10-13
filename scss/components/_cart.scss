@@ -7,6 +7,12 @@
     & .actions {
       display: none;
     }
+    & .remove {
+      &:hover {
+        color: red !important;
+        background-color: inherit;
+      }
+    }
   }
   & .checkout-button {
     background-color: $primary-color !important;
