@@ -15,6 +15,7 @@ include "inc/group-block-style.php";
 include "inc/image-block-style.php";
 include "inc/woocommerce/account.php";
 include "inc/woocommerce/autocomplete.php";
+include "inc/woocommerce/order-review.php";
 include "inc/woocommerce/product-detail-page.php";
 include "inc/woocommerce/product-list-page.php";
 include "inc/woocommerce/woocommerce-gutenberg.php";

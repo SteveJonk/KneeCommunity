@@ -41,6 +41,14 @@ function theme_sidebars()
         'before_widget' => '',
         'after_widget' => '',
     ));
+
+    register_sidebar(array(
+        'name' => 'After Purhcase',
+        'id' => 'after-purchase',
+        'description' => 'Deze sidebar wordt getoond na een aankoop',
+        'before_widget' => '',
+        'after_widget' => '',
+    ));
 }
 
 add_action('widgets_init', 'theme_sidebars');
